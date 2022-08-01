@@ -1,0 +1,32 @@
+{
+  // "solidity.packageDefaultDependenciesDirectory": "node_modules/@humbledao/hardhat/node_modules/",
+  // "solidity-va.test.defaultUnittestTemplate": "hardhat",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.cache": true,
+    "**/.vs/": true,
+    "**/*.cs": true,
+    "**/*.orig": true,
+    "**/bin/": true,
+    "**/build/": false,
+    "**/debug/": true,
+    "**/dist/": false,
+    "**/node_modules/": false,
+    "**/obj": true,
+    "yarn-error.log": true,
+    "**/yarn-error.log": true,
+    "packages\\eth-hooks/lib": true
+  },
+  "eslint.workingDirectories": [
+    { "directory": "packages/nuxt-app", "changeProcessCWD": true },
+    { "directory": "packages/truffle", "changeProcessCWD": true }
+  ],
+  "search.exclude": {
+    "**/yarn-error.log": true,
+    "**/yarn.lock": true
+  },
+}

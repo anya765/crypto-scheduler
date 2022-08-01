@@ -1,0 +1,58 @@
+module.exports = {
+  env: {
+    browser: true,
+    node: true,
+  },
+  plugins: ['nuxt', 'sort-class-members', 'prettier', 'tailwindcss'],
+  extends: [
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:vue/strongly-recommended',
+    'plugin:nuxt/recommended',
+    'plugin:tailwindcss/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
+  root: true,
+  rules: {
+    'array-callback-return': 0,
+    'arrow-body-style': 0,
+    'global-require': 0,
+    'import/newline-after-import': 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/no-named-default': 0,
+    'import/no-unresolved': 0,
+    'import/prefer-default-export': 0,
+    'no-console': 0,
+    'no-debugger': 0,
+    'no-multi-assign': 0,
+    'no-param-reassign': 0,
+    'no-shadow': 0,
+    'no-underscore-dangle': 0,
+    'prefer-promise-reject-errors': 0,
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          component: 'always',
+          normal: 'always',
+          void: 'always',
+        },
+        math: 'always',
+        svg: 'always',
+      },
+    ],
+    'vue/multi-word-component-names': 0,
+    'vue/mustache-interpolation-spacing': ['error', 'always'],
+    'vue/no-multi-spaces': [
+      'error',
+      {
+        ignoreProperties: false,
+      },
+    ],
+    'tailwindcss/no-custom-classname': 0,
+    'vue/order-in-components': 2,
+    'vue/require-component-is': 0,
+    'vue/this-in-template': ['error', 'never'],
+    'vue/v-on-style': ['error', 'shorthand'],
+  },
+}

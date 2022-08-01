@@ -1,0 +1,10 @@
+// customize bulma via variables
+// https://bulma.io/documentation/components/navbar/#variables
+
+$navbar-background-color: #2e303b;
+$navbar-item-color: #fff;
+
+// Import bulma styles
+@import '~bulma';
+// Import buefy styles
+@import '~buefy/src/scss/buefy';

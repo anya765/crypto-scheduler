@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@types/chai",
+      "@types/mocha",
+      "@types/node",
+      "@types/lodash",
+      "@walletconnect/types"
+    ]
+  },
+  "include": [
+    "src",
+    "migrations",
+    "contracts",
+    "scripts",
+    "src/jest.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist",
+    "coverage",
+    "build",
+    "cache",
+    "artifacts",
+    ".gitbook",
+    ".circleci"
+  ]
+}
